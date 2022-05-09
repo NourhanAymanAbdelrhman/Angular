@@ -1,0 +1,22 @@
+<div class="container">
+    <div class= "row pt-5">
+        <div class="col-lg-6 col-md-6 col-sm-12">
+            <img src={{order.url}} width="100%">
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12">
+            <div class="card " width="100%" height="100%">
+                <div class="card-body">
+                  <h2 class="card-title">{{order.name}}</h2>
+                  <h5 class="card-text"> Category:{{order.category}}</h5>
+                  <h5 class="card-text">Content:{{order.description}}</h5>
+                  <h4 class="card-text"> Price:{{order.price}}</h4>
+                  <h5 class="card-text">Place:{{order.branch}}</h5>
+                  <hr>
+                  <h3 class="card-text">Order Number:{{order.order_no}}</h3>
+                  <a routerLink ="/home" class="btn btn-warning">Back to Home </a>
+                </div>
+              </div>
+        </div>
+    </div>
+</div>
+  

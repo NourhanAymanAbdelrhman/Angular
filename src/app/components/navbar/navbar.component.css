@@ -1,0 +1,7 @@
+a{
+    color: aliceblue;
+    font-size: large;
+}
+a:hover{
+    color: darkgoldenrod;
+}

@@ -1,0 +1,59 @@
+<div class="container pt-5">
+    <div class="row" >
+         <div class="col-12">
+            <img src="./assets/open.jpg" class="card-img-top imgBar" alt="..."  >
+         </div>
+        </div>
+        </div>
+
+        <div class="container pt-5">
+            <div class="row" > 
+              <h3 pt-3 id="menu"> our-menu</h3> 
+                 <div class="col-lg-4 col-md-4 col-sm-6" *ngFor="let drink of menu">
+                    <div class="card">
+                        <img [src]="drink.url" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Name:{{drink.name}}</h5>
+                          <p class="card-text">
+                           Category:{{drink.category}}
+                          </p>
+                          <p class="card-text">
+                           Price: {{drink.price}}
+                          </p>
+                          <a routerLink="/home/buy/{{drink.id}}" class="btn btn-warning">Buy Now</a>
+                        </div>
+                      </div>
+                 </div>
+                </div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="container">
+    <div class="row" >
+      <div class="col-6">
+    
+      </div>
+  
+    </div>
+  </div> -->

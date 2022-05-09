@@ -1,0 +1,49 @@
+<div class="container">
+    <div class="row pt-5"> 
+<div class="col-3">
+  <h1> Our team</h1>
+ <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+   Maiores, error, reiciendis laboriosam nam quam odio officia minus 
+   porro repudiandae dicta ex quas. 
+   Possimus cumque accusamus odio totam commodi eveniet maxime.
+   Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+   Maiores, error, reiciendis laboriosam nam quam odio officia minus 
+   porro repudiandae dicta ex quas. 
+   Possimus cumque accusamus odio totam commodi eveniet maxime.
+   Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+   Maiores, error, reiciendis laboriosam nam quam odio officia minus 
+   porro repudiandae dicta ex quas. 
+   Possimus cumque accusamus odio totam commodi eveniet maxime.
+   Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+   Maiores, error, reiciendis laboriosam nam quam odio officia minus 
+   porro repudiandae dicta ex quas. 
+   Possimus cumque accusamus odio totam commodi eveniet maxime.Lorem ipsum 
+   dolor sit amet consectetur, adipisicing elit.
+   Maiores, error, reiciendis laboriosam nam quam odio officia minus 
+   porro repudiandae dicta ex quas. 
+   Possimus cumque accusamus odio totam commodi eveniet maxime.</p>
+</div>
+  <div 
+  *ngFor="let review of reviwes" 
+     class="col-3">
+    <img src="./assets/thanks.jpg" class="card-img-top" alt="..." height="200px">
+    <div class="card-body">
+      <p class="card-text">
+        {{review.reviw}}
+      </p>
+    </div>
+  </div>
+</div> 
+<div class="row">
+  <div class="col-6">
+    <img src="./assets/People-drinking-coffee.jpg" width=100%>
+  </div>
+  <div class="col-6">
+    <textarea  class="form-control"type="text" #comment rows="17"> enter your review</textarea>
+    <button  class="btn btn-warning"  (click)="add(comment.value)">Add your review</button>
+  </div>
+</div>
+</div>
+
+
+    
